@@ -1,0 +1,146 @@
+ <!--
+    –––––––––––––––––––––––––––––––––––––––
+    * * * * * * * * * * * * * * * * * * * * 
+    
+    Lets make some great things together!
+    
+    -Chris
+
+    * * * * * * * * * * * * * * * * * * * * 
+    –––––––––––––––––––––––––––––––––––––––
+    -->
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+
+    <title>CHRISTOPHER SEEDS – interaction design &amp; art direction</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  
+     <link href="css/custom.css" rel="stylesheet">
+       <link href="css/cover.css" rel="stylesheet">
+
+
+  
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     <!-- FONTELLO CODES -->
+  <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]>
+    <link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+        
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+      
+    </script>
+<link href='http://fonts.googleapis.com/css?family=Lato|Neuton:400,700' rel='stylesheet' type='text/css'>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12577956-2', 'christopherseeds.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+                 <!-- <div id="avatar"></div> -->
+              <h3 class="masthead-brand">
+              
+              </h3>
+              
+            </div>
+          </div>
+          <div class="inner cover">
+            <h1 class="cover-heading">Hi there. I'm Chris</h1>
+            <hr>
+         
+            <p class="lead">I design impactful experiences across screens and paper. I'm currently designing products at <a href="https://www.plated.com/">Plated</a>. I am a curious designer who is always looking to learn something new. Thanks</p>
+            <p class="lead icons">
+              <a href="mailto:hello@christopherseeds.com?subject=Hi Chris, lets talk about" class="icon-mail"></a>
+              <a href="https://www.twitter.com/cseeds"  class="icon-twitter" ></a> 
+              <a href="https://www.facebook.com/cseeds" class="icon-facebook-squared"></a> 
+              <a href="http://www.linkedin.com/in/cseeds" class="icon-linkedin"></a> 
+              <a href="http://www.rdio.com/people/cseeds/" class="icon-rdio"></a> 
+            </p>
+
+          </div>
+
+          <div class="mastfoot">
+
+            <div class="inner">
+              <div id="lastfm-wrapper">
+                
+              <div class="bar-c">
+                <div id="bar-1" class="bar"></div>
+                <div id="bar-2" class="bar"></div>
+                <div id="bar-3" class="bar"></div>
+            <a href="http://www.last.fm/user/cseeds" id="lastfm"></a>
+              </div>
+              
+              </div>
+  
+
+
+              <p>&copy; 2014 Christopher Seeds</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+
+    <!-- Last FM script-->
+    <script>
+        $.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cseeds&api_key=04db1a0f187b3b678c746bca27594407&format=json', function(data) {
+          var track = data.recenttracks.track[0];
+          $('#lastfm').html(track.artist["#text"] + " - " + track.name);
+        });
+        </script>
+  </body>
+</html>
